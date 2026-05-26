@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="30">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Rates Monitor ($1 USD Base)</title>
+    <link rel="stylesheet" href="./assets/css/fx-fiat-style.css">
+    <script src="./assets/js/fx-fiat-app.js"></script>
+
+</head>
+<body>
+
+    <div class="container">
+        <h1>Global Asset Monitor</h1>
+        <p class="subtitle">Live financial values benchmarked to the US Dollar base</p>
+        
+        <h2>Fiat Exchange (Amount per $1 USD)</h2>
+        <table>
+            <thead><tr><th>Currency</th><th>Value</th></tr></thead>
+            <tbody id="fiat-table-body">
+                <tr><td colspan="2" style="text-align: center; color: #64748b;">Awaiting Python stream pipeline sync...</td></tr>
+            </tbody>
+        </table>
+
+        <h2>Crypto Market Value (USD Valuation)</h2>
+        <table>
+            <thead><tr><th>Asset Name</th><th>Current Token Price</th></tr></thead>
+            <tbody id="crypto-table-body">
+                <tr><td colspan="2" style="text-align: center; color: #64748b;">Awaiting Python stream pipeline sync...</td></tr>
+            </tbody>
+        </table>
+        
+        <div class="meta">
+            <p>Global Source Update: <span id="api-time">-</span></p>
+            <p>System Last Sync: <span id="sync-time">-</span></p>
+        </div>
+        <button onclick="loadRates()">Refresh Asset Monitor</button>
+    </div>
+
+</body>
+</html>
